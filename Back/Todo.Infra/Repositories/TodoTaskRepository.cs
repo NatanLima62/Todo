@@ -5,7 +5,7 @@ using Todo.Infra.Contexts;
 
 namespace Todo.Infra.Repositories;
 
-public class TodoTaskRepository : Repository<TodoTask>, ITodoTaksRepository
+public class TodoTaskRepository : Repository<TodoTask>, ITodoTaskRepository
 {
     public TodoTaskRepository(BaseApplicationDbContext context) : base(context)
     {

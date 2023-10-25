@@ -3,7 +3,7 @@ using Todo.Domain.Entities;
 
 namespace Todo.Domain.Contracts.Repositories;
 
-public interface ITodoListRepository
+public interface ITodoListRepository : IRepository<TodoList>
 {
     Task<TodoList?> ObterPorId(int id);
     Task<IResultadoPaginado<TodoList>> Buscar(IBuscaPaginada<TodoList> filtro);

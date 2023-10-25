@@ -46,6 +46,8 @@ public static class DependencyInjection
         services
             .AddScoped<IFileService, FileService>()
             .AddScoped<IAdministradorService, AdministradorService>()
+            .AddScoped<ITodoListService, TodoListService>()
+            .AddScoped<ITodoTaskService, TodoTaskService>()
             .AddScoped<IAdministradorAuthService, AdministradorAuthService>()
             .AddScoped<IUsuarioService, UsuarioService>();
     }

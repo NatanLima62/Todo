@@ -23,6 +23,8 @@
     <ItemGroup>
       <ProjectReference Include="..\Todo.Infra\Todo.Infra.csproj" />
 
+
+
     </ItemGroup>
 
 

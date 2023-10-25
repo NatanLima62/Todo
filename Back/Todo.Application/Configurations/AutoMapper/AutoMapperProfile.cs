@@ -1,5 +1,7 @@
 using AutoMapper;
 using Todo.Application.Dtos.Administrador;
+using Todo.Application.Dtos.TodoList;
+using Todo.Application.Dtos.TodoTask;
 using Todo.Application.Dtos.Usuario;
 using Todo.Domain.Entities;
 
@@ -15,6 +17,14 @@ public class AutoMapperProfile : Profile
         
         CreateMap<AdministradorDto, Administrador>().ReverseMap();
         CreateMap<AdicionarAdministradorDto, Administrador>().ReverseMap();
-        CreateMap<Dtos.Administrador.AtualizarAdministradorDto, Administrador>().ReverseMap();
+        CreateMap<AtualizarAdministradorDto, Administrador>().ReverseMap();
+        
+        CreateMap<TodoTaskDto, TodoTask>().ReverseMap();
+        CreateMap<AdicionarTodoTaskDto, TodoTask>().ReverseMap();
+        CreateMap<AtualizarTodoTaskDto, TodoTask>().ReverseMap();
+        
+        CreateMap<TodoListDto, TodoList>().ReverseMap();
+        CreateMap<AdicionarTodoListDto, TodoList>().ReverseMap();
+        CreateMap<AtualizarTodoListDto, TodoList>().ReverseMap();
     }
 }
