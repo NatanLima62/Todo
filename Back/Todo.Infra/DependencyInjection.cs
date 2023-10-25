@@ -60,6 +60,8 @@ public static class DependencyInjection
     {
         services
             .AddScoped<IAdministradorRepository, AdministradorRepository>()
+            .AddScoped<ITodoListRepository, TodoListRepository>()
+            .AddScoped<ITodoTaksRepository, TodoTaskRepository>()
             .AddScoped<IUsuarioRepository, UsuarioRepository>();
     }
     

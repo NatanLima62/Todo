@@ -20,6 +20,8 @@ public abstract class BaseApplicationDbContext : DbContext, IUnitOfWork
 
     public DbSet<Usuario> Usuarios { get; set; } = null!;
     public DbSet<Administrador> Administradores { get; set; } = null!;
+    public DbSet<TodoList> Todos { get; set; } = null!;
+    public DbSet<TodoTask> Tasks { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -11,6 +11,9 @@ public class Usuario : Entity, IAggregateRoot
     public string Senha { get; set; } = null!;
     public string? Foto { get; set; }
 
+    public List<TodoList> Todos { get; set; } = new();
+    public List<TodoTask> Tasks { get; set; } = new();
+
     public override bool Validar(out ValidationResult validationResult)
     {
         validationResult = new UsuarioValidator().Validate(this);
